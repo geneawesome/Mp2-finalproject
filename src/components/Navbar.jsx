@@ -7,7 +7,7 @@ import "./Navbar.css"
     const [menuOpen, setMenuOpen] = useState(false)
     return (
         <nav>
-            <NavLink to = "/" className='title'>Website</NavLink>
+            <NavLink to = "/" className='title'>Logo</NavLink>
             <div className="menu" onClick={() => {setMenuOpen (!menuOpen)} }>
                 <span></span>
                 <span></span>
@@ -25,9 +25,6 @@ import "./Navbar.css"
                 </li>
                 <li>
                 <NavLink to="/contact">Contact</NavLink>
-                </li>
-                <li>
-                <NavLink to="/sign">Sign Up</NavLink>
                 </li>
             </ul>
         </nav>

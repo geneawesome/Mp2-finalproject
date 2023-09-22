@@ -5,3 +5,91 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   
+  .home {
+    height:100vh ;
+    display: flex;
+    align-items:center;
+    padding: 0 10%;
+}
+
+.home-content{
+    max-width: 600px;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    color: black;
+    line-height:1.2 ;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+
+.home-content .btn-box {
+  display: flex;
+  justify-content:space-between;
+  width: 345px;
+  height: 60px;
+  
+}
+.btn-box a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background:tan ;
+  border: 2px solid tan;
+  border-radius:8px;
+  font-size: 19px;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow:hidden;
+  transition:.5s;
+ 
+}
+
+.btn-box a:hover {
+  color:beige ;
+
+}
+.btn-box a:nth-child(2)
+{
+  background: transparent;
+  color:black;
+}
+.btn-box a:nth-child(2):hover
+{
+  color: black;
+} 
+
+.btn-box a:nth-child(2)::before
+{
+  background:tan;
+} 
+
+.btn-box a::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background:black;
+  z-index:-1 ;
+  transition:.5s;
+}
+
+.btn-box a:hover::before
+{
+  width: 100%;
+}
+

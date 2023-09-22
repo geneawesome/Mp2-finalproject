@@ -1,9 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
-import { About, Contact, Home, Services, Sign} from "./components/pages";
-
-
+import { About, Contact, Home, Services, Sign} from "./components/pages"; 
 
 
 function App() {
